@@ -54,7 +54,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> bulkCreateUser() {
         List<User> users = new ArrayList<>();
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 2; i++) {
             users.add(createUser(CreateUserRequestDto.builder()
                     .email("nick" + i + "@gmail.com")
                     .userName("nick" + i)
