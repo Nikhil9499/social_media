@@ -58,7 +58,7 @@ public class SocialMediaApplication {
         postService.react(EntityReactRequestDto.builder().userId(user.getUserId()).entityId(post.getId()).reactType("like").build());
         System.out.println("Post after like is " + postService.getPostDetails(post.getId()));
 
-        System.out.println("\nGoing to put 5 comments on created post by 5 diff users");
+        System.out.println("\nGoing to put comments on created post by diff users");
 
         EntityResponseDto parentComment = commentOnPost(userList, post.getId());
 
