@@ -53,7 +53,7 @@ public class EntityResponseDto {
                 .commentsCount(comment.getCommentsCount())
                 .likesCount(comment.getReactTypeVsUserIdsMap().getOrDefault(ReactType.LIKE, new HashSet<>()).size())
                 .dislikesCount(comment.getReactTypeVsUserIdsMap().getOrDefault(ReactType.DISLIKE, new HashSet<>()).size())
-                .parentId(comment.getParentId() == null? comment.getPostId() : comment.getParentId())
+                .parentId(comment.getParentId() == null ? comment.getPostId() : comment.getParentId())
                 .build();
     }
 }
